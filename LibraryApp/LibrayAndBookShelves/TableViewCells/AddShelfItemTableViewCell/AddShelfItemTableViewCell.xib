@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="AddShelfItemTableViewCell" customModule="LibraryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qw-Vz-bAm">
+                        <rect key="frame" x="0.0" y="116" width="338" height="1"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Y2K-I7-qNx"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_book" translatesAutoresizingMaskIntoConstraints="NO" id="JXN-Kz-lA8">
+                        <rect key="frame" x="12" y="16" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="gCZ-Nz-u8s"/>
+                            <constraint firstAttribute="width" constant="100" id="kxh-DD-PVr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f47-O1-brS">
+                        <rect key="frame" x="120" y="16" width="174" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-box" translatesAutoresizingMaskIntoConstraints="NO" id="VAp-CV-gie">
+                        <rect key="frame" x="302" y="24" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="CPT-Ys-lkE"/>
+                            <constraint firstAttribute="height" constant="24" id="KnM-b9-cLS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhN-lC-fgV">
+                        <rect key="frame" x="120" y="44.5" width="174" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="f47-O1-brS" firstAttribute="leading" secondItem="JXN-Kz-lA8" secondAttribute="trailing" constant="8" id="18o-CG-GSF"/>
+                    <constraint firstItem="VAp-CV-gie" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="1ca-49-4H2"/>
+                    <constraint firstItem="JXN-Kz-lA8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="3If-ES-asW"/>
+                    <constraint firstItem="YhN-lC-fgV" firstAttribute="leading" secondItem="JXN-Kz-lA8" secondAttribute="trailing" constant="8" id="3Tc-EK-SBz"/>
+                    <constraint firstItem="3qw-Vz-bAm" firstAttribute="top" secondItem="JXN-Kz-lA8" secondAttribute="bottom" id="3Tr-s7-bv8"/>
+                    <constraint firstAttribute="trailing" secondItem="VAp-CV-gie" secondAttribute="trailing" constant="12" id="4T4-hd-Ane"/>
+                    <constraint firstItem="VAp-CV-gie" firstAttribute="leading" secondItem="f47-O1-brS" secondAttribute="trailing" constant="8" id="Eht-Na-xYq"/>
+                    <constraint firstItem="3qw-Vz-bAm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Q10-Lo-Nud"/>
+                    <constraint firstItem="VAp-CV-gie" firstAttribute="leading" secondItem="YhN-lC-fgV" secondAttribute="trailing" constant="8" id="jC1-5I-FHr"/>
+                    <constraint firstAttribute="bottom" secondItem="3qw-Vz-bAm" secondAttribute="bottom" id="kCQ-HC-G4p"/>
+                    <constraint firstItem="JXN-Kz-lA8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="mPL-FD-fS1"/>
+                    <constraint firstItem="YhN-lC-fgV" firstAttribute="top" secondItem="f47-O1-brS" secondAttribute="bottom" constant="8" id="nt8-h6-2xI"/>
+                    <constraint firstItem="f47-O1-brS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="otC-hM-5Ae"/>
+                    <constraint firstAttribute="trailing" secondItem="3qw-Vz-bAm" secondAttribute="trailing" id="wFD-rY-7Gc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="JXN-Kz-lA8" id="zWC-Dh-3PR"/>
+                <outlet property="imgCheckBox" destination="VAp-CV-gie" id="fmz-mj-XjW"/>
+                <outlet property="labelBook" destination="YhN-lC-fgV" id="E4k-cd-OXS"/>
+                <outlet property="labelTitle" destination="f47-O1-brS" id="S7K-xq-veJ"/>
+            </connections>
+            <point key="canvasLocation" x="150.72463768115944" y="80.357142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check-box" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="no_book" width="33.333332061767578" height="33.333332061767578"/>
+    </resources>
+</document>
